@@ -13,10 +13,12 @@ const nettsider = db.ref("nettsider");
 function lagreNettside(evt) {
     evt.preventDefault();
     nettsider.push({
+        // Hva skal innlegget på nettsiden inneholde?
         overskrift: inpOverskrift.value,
         hovedtekst: inpHovedtekst.value,
         bilde: inpBilde.value
-    })
+    });
+    skjema.reset();
 }
 
 // Eventlistenere
