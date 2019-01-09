@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { font-family: sans-serif; font-size: 100%; }
+
+main {
+    max-width: 700px;
+    margin: auto;
+}
+
+main img {
+    width: 100%;
+}
