@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Opprett en ny nettside til porteføljen</h1>
+        <form id="skjema">
+            
+            <div>
+                <p>
+                    <label for="inpOverskrift">Overskrift</label>
+                </p>
+                <input type="text" id="inpOverskrift" required placeholder="Overskrift">
+            </div>
+            <div>
+                <p>
+                    <label for="inpHovedtekst">Hovedtekst</label>
+                </p>
+                <textarea id="inpHovedtekst"></textarea>
+            </div>
+            <div>
+                <p>
+                    <label for="inpBilde">Bilde</label>
+                </p>
+                <input type="text" id="inpBilde" required placeholder="url til bilde">    
+            </div>
+            <button type="submit">Publiser nettside</button>
+        </form>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAG80sm3UcOkMx751O0agAX83wgnaT6WKI",
+        authDomain: "fir-test-ccda0.firebaseapp.com",
+        databaseURL: "https://fir-test-ccda0.firebaseio.com",
+        projectId: "fir-test-ccda0",
+        storageBucket: "fir-test-ccda0.appspot.com",
+        messagingSenderId: "876690579210"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <script src="main.js"> </script>
+</body>
+</html>
